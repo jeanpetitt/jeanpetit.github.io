@@ -1,0 +1,228 @@
+@import url('https://fonts.googleapis.com/css2?family=Advent+Pro:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+
+html {
+	scroll-behavior: smooth;
+}
+body{
+	font-family: 'dancing script', cursive;
+	padding: 0;
+	margin: 0;
+}
+ul{
+	margin: 0;
+	padding: 0;
+}
+li{
+	list-style: none;
+}
+h2{
+	text-transform: uppercase;
+	text-align: center;
+	padding-top: 30px;
+	font-size: 2em;
+}
+a{
+	text-decoration: none;
+	color: blue;
+}
+/* **************navbar*********** */
+nav{
+	overflow: hidden;
+	background-color: cyan;
+	position: fixed;
+	width: 100%;
+	opacity: 0.9;
+}
+header li{
+	float: right;
+	font-size: 1.2em;
+}
+header li a{
+	text-decoration: none;
+	display: block;
+	text-align: center;
+	padding: 18px 16px; 
+}
+#logo{
+	font-family: 'dancing script', cursive;
+	font-weight: bold;
+	float: left;
+}
+/* ********************* IMAGE PRINCIPALE ********************** */
+#image_principale{
+	padding-top: 60px;
+	background: url(media/standart.jpg) no-repeat fixed 50% 50%;
+	background-size: cover;
+	height: 799px;
+}
+h1{
+	font-family: 'dancing script', cursive;
+	text-align: center;
+	color: white;
+	font-size: 6em;
+	margin-top: 110px;
+	text-shadow: 1px 3px 2px black;
+}
+#premiertrait{
+	height: 1px;
+	width: 90%;
+	margin: -3px auto;
+	background-color: #FFFAE1;
+	box-shadow: 1px 3px 2px black;
+}
+h3{
+	 text-align: center;
+	 color: antiquewhite;
+	 font-size: 3em;
+	 text-shadow: 1px 3px 2px black;
+}
+/************************* presentation ********************** */
+#presentation{
+	background-color: cyan;
+	padding: 10px 0px 100px 0;
+}
+#textintro{
+	padding: 0px 20%;
+}
+#prestation{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	padding: 30px 20%;
+}
+.imageprestation h4{
+	font-family: 'dancing pro', cursive;
+	text-align: center;
+	font-size: 1.8em;
+	margin: 15px;
+	font-weight: 300;
+}
+.imageprestation img{
+	border-radius: 10px; /*lorsque je met ent px l'image reste toujours carre
+						 *mais si je met % elle devient ronde */
+	box-shadow: 5px 3px 5px 1px rgba(0,0,0,0.83);
+	width: 300px;
+}
+.imageprestation img:hover{
+	opacity: 0.5;
+	transform: scale(1.05);
+	transition: 0.6s ease-in-out;	
+}
+/* *************** APPRENTISSAGE ************ */
+#apprentissage {
+	height: 1700px;
+	background-color: #FFFAE1;
+	padding: 1px 2%;
+}
+#apprentissage h2 {
+	padding-top: 60px;
+}
+#maintenance{
+	background: url(media/logo.jpg) center;
+}
+#logiciel{
+	background: url(media/pc.jpg) center;
+}
+#securité{
+	background: url(media/ordi1.jpg) center;
+}
+#reseau{
+	background: url(media/cloud.jpg) center;
+}
+#artificiel{
+	background: url(media/ordi.jpg) fixed;
+}
+#apprentissage li{
+	margin: 65px 100px 100px 100px;
+	height: 226px;
+	width: 55%;
+	max-width: 350%;
+	float: left;
+	box-shadow: 6px 6px 28px -1px rgba(0,0,0,0.74);
+}
+#apprentissage p{
+	height: 45px;
+	width: 235px;
+	background-color: #01DF74;
+	float: right;
+	margin: 50px -190px ;
+	font-size: 1.5em;
+	text-align: center;
+	padding-top: 15px;
+	box-shadow: 4px 4px 0px 1px rgba(90,161,43,1);
+}
+#apprentissage #logiciel, #apprentissage #reseau {
+	float: right;
+}
+#reseau p, #securité p,  #maintenance p{
+	width: 350px;
+}
+#logiciel p, #reseau p{
+	float: left;
+	background-color: cyan;
+	margin-left: -190px;
+	box-shadow: -4px 4px 0 1px rgba(15,154, 156,1);
+}
+/* ********************* FOOTER ***************** */
+footer {
+	background-color: #524A3A;
+	color: #FFFAE1;
+	padding: 20px 0 10px;
+	text-align: center;
+}
+form {
+	margin: 0 auto;
+	max-width: 900px;
+}
+input, textarea, button {
+	border: none;
+	width: 55%;
+	padding: 15px 10px;
+	margin: 1px 0;
+	font-size: 1.2em;
+	font-family: 'advent pro', sans-serif;
+	border-radius: 8px;
+}
+textarea {
+	height: 120px;
+}
+button {
+	font-size: 1.5em;
+	background-color: #FFFAE1; 
+}
+button:hover{
+	background-color: #e55039;
+	color:	#FFFAE1;
+	transition: 0.3s ease-in-out;
+}
+#deuxièmetrait {
+	height: 1px;
+	width: 75%;
+	background-color: #FFFAE1;
+	margin: 60px auto;
+}
+#copyrightEticons {
+	display: flex;
+	margin-bottom: 20px;
+	padding: 0 10%;
+}
+#copyrightEticons {
+	width: 50%;
+	text-align: left;
+	color: white;
+}
+#icons {
+	width: 50%;
+	text-align: right;
+}
+#icons a {
+	display: inline-block;
+	padding: 0 15px;
+	font-size: 1.3em;
+	color: #FFFAE1;
+}
+#icons a:hover {
+	 transform: scale(1.5);
+	 transition: 0.1s;
+}
